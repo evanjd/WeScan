@@ -61,10 +61,7 @@ public final class ImageScannerController: UINavigationController {
         
         self.imageScannerDelegate = delegate
         
-        if #available(iOS 13.0, *) {
-            // Use semantic colors for Dark Mode compatibility on iOS 13+
-            navigationBar.tintColor = .label
-        } else {
+        if #available(iOS 13.0, *) {} else {
             navigationBar.tintColor = .black
         }
 
